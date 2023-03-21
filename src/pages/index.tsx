@@ -66,6 +66,7 @@ export default function Home() {
                             <>
                                 {visibleItems.map((item, index) => (
                                     <Card
+                                        key={index}
                                         index={index}
                                         title={item.data[0].title}
                                         center={item.data[0].center}
